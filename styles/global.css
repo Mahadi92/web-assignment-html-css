@@ -24,7 +24,6 @@
   justify-content: center;
 }
 
-
 /* display */
 .d-md-flex{
   display: none;
@@ -47,3 +46,16 @@
     display: none;
   }
 }
+
+/* --- text -- */
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+
+/* ------ spacing ------ */

@@ -1,20 +1,277 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
-main{
+main {
   overflow: hidden;
 }
 
-.container{
-  padding: 0 10%;
+.container {
+  padding: 20px;
 }
 
-@media (min-width: 1280px){
-  .container{
+@media (min-width: 768px) {
+  .container {
+    padding: 0 10%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
     padding: 0 20%;
+  }
+}
+
+.heading{
+  text-align: center;
+  padding: 10px 0 20px 0;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/* ---- buttons --- */
+.btn-outline {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+}
+.btn-primary {
+  border: 1px solid #fff;
+  background: linear-gradient(to right, rgb(86, 204, 242), rgb(47, 128, 237));
+  color: #fff;
+  width: 50%;
+  padding: 10px 20px;
+}
+
+/* ============  Hero section  ============ */
+.hero-container {
+  height: 60vh;
+  background: url(.././images/banner.jpg) center center/cover no-repeat fixed;
+}
+
+.hero-container p {
+  padding: 40px 2%;
+}
+
+.hero-content {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  background: rgba(0, 0, 0, 0.527);
+  color: #fff;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .hero-container p {
+    padding: 40px 5%;
+  }
+  .hero-content {
+    padding: 50px;
+  }
+}
+
+/* ============  Instructor section  ============ */
+.instructor-section {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.instructor-card__container {
+  width: 100%;
+  padding: 40px 10px;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 20px 20px;
+}
+
+.instructor-card img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+.instructor-card__content {
+  padding: 10px 10px;
+  border-radius: 0 0 5px 5px;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(to right, rgb(78, 84, 200), rgb(143, 148, 251));
+}
+
+@media (min-width: 768px) {
+  .instructor-card__container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .instructor-card__container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 50px;
+  }
+}
+
+/* ============  Instructor section  ============ */
+.contact-section {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 50px 30px;
+  padding-bottom: 50px;
+}
+
+.contact-card {
+  text-align: center;
+  padding: 20px 30px;
+  background: linear-gradient(to right, rgb(211, 204, 227), rgb(233, 228, 240));
+  border-radius: 10px;
+}
+.contact-card .contact-card-icon {
+  font-size: 40px;
+  color: blueviolet;
+}
+
+.contact-card h4 {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+@media (min-width: 768px) {
+  .contact-section {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 50px 30px;
+  padding-bottom: 50px;
+}
+}
+
+
+/* ------ about page ------ */
+.about{
+  padding: 50px 0 100px 0;
+}
+
+.about-img img{
+  border-radius: 20px;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  padding: 40px 0;
+}
+
+/* ------ our courses page ----- */
+.course-container{
+  padding: 50px 0;
+}
+
+.cards{
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-gap: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 3px solid rgb(201, 201, 201) ;
+  padding: 50px;
+
+}
+
+.cardicon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(to right, rgb(127, 127, 213), rgb(134, 168, 231), rgb(145, 234, 228));
+}
+
+.cardicon i {
+  color: white;
+  font-size: 35px;
+}
+
+.card h4 {
+  text-align: center;
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.card p {
+  
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.card button {
+  padding: 10px 15px;
+  color: white;
+  font-weight: 700;
+  background: linear-gradient(to right, rgb(78, 84, 200), rgb(143, 148, 251));
+  border: 1px solid transparent;
+  margin-top: 12px;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 50px;
+  }
+}
+
+/* ----- contact section ------- */
+.contact-us-container {
+  padding: 50px 0;
+  width: 100%;
+}
+.contact-us-container .form-group{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 10px 30px;
+    padding-bottom: 10px;
+}
+.input-item{
+  /* margin-bottom: 10px; */
+}
+.input-item label{
+  display: block;
+  padding-bottom: 5px;
+}
+.input-item input,
+.input-item textarea{
+  padding: 5px 10px;
+  outline: none;
+  width: 100%;
+}
+
+@media (min-width: 1280px) {
+  .contact-us-container .form-group{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 30px;
+    padding-bottom: 10px;
   }
 }
