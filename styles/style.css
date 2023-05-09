@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+main{
+  overflow: hidden;
+}
+
+.container{
+  padding: 0 10%;
+}
+
+@media (min-width: 1280px){
+  .container{
+    padding: 0 20%;
+  }
+}
